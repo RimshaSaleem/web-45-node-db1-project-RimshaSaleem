@@ -7,7 +7,10 @@ exports.checkAccountPayload = (req, res, next) => {
   next(error)
   }
   
-  
+  else if(typeof name !== 'string'){
+    error.message= 'name of account must be a string'
+    next(error)
+  }
 }
 
 exports.checkAccountNameUnique = (req, res, next) => {
