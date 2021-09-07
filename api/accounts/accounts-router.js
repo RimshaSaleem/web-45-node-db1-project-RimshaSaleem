@@ -4,7 +4,7 @@ router.get('/', (req, res, next) => {
   // DO YOUR MAGIC 
   try {
     res.json('get accont')
-    throw new Error(`ohhhh! !!`)
+    
     
 
   }
